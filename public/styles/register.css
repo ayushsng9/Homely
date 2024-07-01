@@ -1,0 +1,33 @@
+
+.logo {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center    ;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.Sign-up {
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+  
+.Sign-up a {
+    text-decoration: none;
+    color: navy;
+  }
+  
+.Sign-up a:hover {
+    text-decoration: black solid underline;
+  }
+
+
+.card-title {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}

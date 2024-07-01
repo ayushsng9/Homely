@@ -1,0 +1,40 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-black border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <div class="navbar-brand d-flex align-items-center justify-content-center me-4">
+        <img src="/images/android-chrome-192x192.png" width="45px" height="45px">
+        <h4 style="display: inline-block;">Homely</h4>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/homes">Homestays</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/homes/new">New Homestay</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <% if(!currentUser){ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Sign-Up</a>
+          </li>
+          <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,58 @@
+<%layout('/layouts/boilerplate')%>
+    <div class="row">
+        <h1 class="text-center">New Homestay</h1>
+    <div class="col-md-6 offset-md-3">
+    <form action="/homes" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+
+        <div class="form-group mb-3">
+            <label for="title" class="form-label mb-2">Title</label>
+            <input type="text" id="title" placeholder="title" name="home[title]" class="form-control" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Title can't be empty
+              </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="location" class="form-label mb-2">Location</label>
+            <input type="text" id="location" placeholder="location" name="home[location]" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a valid location
+              </div>
+        </div>
+
+        <div class="form-file mb-3">
+            <label for="image" class="form-label">Add Images</label>
+            <input class="form-control" type="file" id="image" name="image" multiple>
+        </div>
+        
+
+        <div class="form-group mb-3">
+            <label for="price" class="form-label mb-2">Price per Night</label>
+            <div class="input-group">
+                <span class="input-group-text" id="price-label">&#8377;</span>
+                <input type="text" id="price" placeholder="" name="home[price]" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please provide price
+                  </div>
+            </div>
+            
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="desc" class="form-label mb-2">Description</label>
+            <textarea type="text" id="desc" placeholder="Description" name="home[description]" class="form-control"  required></textarea>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Description can't be empty
+              </div>
+        </div>
+        <button type="submit" class="btn btn-dark mb-3">Add Homestay</button>
+    </form>
+    </div>
+    </div>
+    
